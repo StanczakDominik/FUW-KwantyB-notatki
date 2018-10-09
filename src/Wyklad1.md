@@ -42,7 +42,7 @@ pod dywan (do rozumienia fizyki, ale nie każdy rachunek jest do odtworzenia):
 Polecane notatki wykładowe, będzie raczej przeliczanie wszystkiego (bez prac
 domowych dla wytrwałych!)
 
-## Treść wykładu
+# Treść wykładu
 
 * pomijamy efekty relatywistyczne
 * układy takie jak ciała stałe, nadprzewodniki, przewodniki
@@ -54,7 +54,7 @@ $$ T < T_{char} $$
 
 Dla metali byłaby to temperatura Fermiego $ 10^4 K $.
 
-# Mechanika kwantowa pojedynczej cząstki (wersja nierelatywistyczna)
+## Mechanika kwantowa pojedynczej cząstki (wersja nierelatywistyczna)
 
 * **stany** $ \bra{\psi} \in H $
 * Iloczyn skalarny $ \braket{\psi|\phi} \in C $, symetryczny ze sprzężeniem
@@ -72,4 +72,43 @@ Dla metali byłaby to temperatura Fermiego $ 10^4 K $.
 > Wszyscy wiedzą, że to się nazywa bra, a to się nazywa ket? Tak?
 > Odwrotnie!
 
-Bierzemy bazę ortonormalną $ \{ \bra{\nu} \} $ i dowolny stan ortonormalny unormowany $\braket{\psi|\psi} = 1 $
+> flux spinning
+
+$$ \braket{r|p} = (2 \pi \hbar)^{-3/2} \exp{i p \cdot r / \hbar} $$
+
+Z tego można wyprowadzić operator pędu w reprezentacji położeniowej.
+
+## Uwaga do notacji
+
+Mając dodatkowe stopnie swobody (spiny)
+
+$$ \ket{r} \to \ket{r, \sigma} $$
+
+$$ 1 = \sum_\sigma \int dr \ket{r, \sigma} \bra{r, \sigma} $$
+
+Żeby oszczędzić pisania wprowadzamy $ \ket{x}  = \ket{r, \sigma}$, zaś $\int dx = \int_x = \sum_\sigma $
+
+## Nierelatywistyczna mechanika kwantowa układów wielu cząstek
+
+Koncentrujemy się na układach N identycznych ruchomych cząstek. Chwilowo pomijamy spin.
+
+$$ \psi(r) \to \psi(r_1, r_2, ..., r_N) $$.
+
+Dodatkowy postulat wynikający z eksperymentu - cząstki są nierozróżnialne i to
+daje ograniczenia na funkcje falowe.
+
+Mając nierozróżnialne cząstki zamiana współrzędnych nie powinna zmieniać ich
+stanu (dodaje najwyżej unitarny czynnik fazowy).
+
+Zamieniamy dwie cząstki dwie razy cyklicznie, wyskakuje $\lamba^2$, więc
+$\lambda^2 = 1 \to \lambda = \pm 1$ (odpowiednio bozony i fermiony).
+
+# Baza w przestrzeni stanów (n-cząstkowych)
+
+Mamy zespół funkcji falowych $\psi_\nu (r)$ tworzących bazę ortonormalną.
+
+Mamy stan n-cząstkowy $\psi(r_1, ..., r_N)$. 
+
+Definiujemy wielkość $A_{\nu_1} (r_2 ... r_N) = \int dr_1 \psi^*_{\nu_1} (r_1) \psi(r_1 ... r_N) $
+
+Mając zbiór funkcji $A_{\nu_1} (r_2...r_N)$ (dla wszystkich stanów $\nu$ możemy odtworzyć funkcję falową
